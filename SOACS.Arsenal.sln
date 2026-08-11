@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOACS.Arsenal", "SOACS.Arsenal.csproj", "{C7A4C8A4-8D42-4E56-B09C-CE98DD748A71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7A4C8A4-8D42-4E56-B09C-CE98DD748A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7A4C8A4-8D42-4E56-B09C-CE98DD748A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7A4C8A4-8D42-4E56-B09C-CE98DD748A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7A4C8A4-8D42-4E56-B09C-CE98DD748A71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

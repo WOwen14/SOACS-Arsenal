@@ -1,0 +1,64 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+artifacts/
+
+# Generated packages and runtime data
+Repository/
+Repositories/
+DeploymentOutput/
+DeploymentPackages/
+Packages/
+Logs/
+Reports/
+Temp/
+Staging/
+Rules/ApplicationRules.xml
+PatchManifest.xml
+SHA256SUMS.txt
+*.log
+*.csv
+
+# Update payloads / generated deployment archives
+*.msu
+*.cab
+*.msi
+*.msp
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.zip
+*.7z
+
+# Firmware / vendor payloads
+*.bin
+*.rom
+*.cap
+*.fw
+
+# OS / editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.bak
+*.swp
+
+# Secrets and local configuration
+.env
+.env.*
+secrets.json
+*.secrets.json
+appsettings.Local.json
