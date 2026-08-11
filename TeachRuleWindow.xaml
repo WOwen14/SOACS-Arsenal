@@ -1,0 +1,17 @@
+<Window x:Class="SOACS.Arsenal.TeachRuleWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Teach Arsenal" Height="600" Width="760" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" Background="#0D120D" Foreground="#F2F5F2">
+ <Grid Margin="18"><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+  <StackPanel><TextBlock Text="TEACH ARSENAL" FontSize="28" FontWeight="Bold" Foreground="#B9FF00"/><TextBlock Text="Create an offline recognition and silent-install rule for this executable. Test all switches in a lab before operational use." TextWrapping="Wrap" Foreground="#FFD84D" Margin="0,5,0,15"/></StackPanel>
+  <Grid Grid.Row="1"><Grid.ColumnDefinitions><ColumnDefinition Width="190"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+   <TextBlock Text="Package"/><TextBox Grid.Column="1" Text="{Binding PackageName, Mode=OneWay}" IsReadOnly="True"/>
+   <TextBlock Grid.Row="1" Text="Rule name"/><TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Rule.Name, UpdateSourceTrigger=PropertyChanged}"/>
+   <TextBlock Grid.Row="2" Text="Publisher contains"/><TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Rule.PublisherContains, UpdateSourceTrigger=PropertyChanged}"/>
+   <TextBlock Grid.Row="3" Text="Product contains"/><TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Rule.ProductContains, UpdateSourceTrigger=PropertyChanged}"/>
+   <TextBlock Grid.Row="4" Text="Filename contains"/><TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Rule.FileNameContains, UpdateSourceTrigger=PropertyChanged}"/>
+   <TextBlock Grid.Row="5" Text="Category"/><TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Rule.Category, UpdateSourceTrigger=PropertyChanged}"/>
+   <TextBlock Grid.Row="6" Text="Silent arguments"/><TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Rule.SilentArguments, UpdateSourceTrigger=PropertyChanged}"/>
+   <TextBlock Grid.Row="7" Text="Install priority"/><TextBox Grid.Row="7" Grid.Column="1" Text="{Binding Rule.Priority, UpdateSourceTrigger=PropertyChanged}"/>
+   <TextBlock Grid.Row="8" Text="Verification display name"/><TextBox Grid.Row="8" Grid.Column="1" Text="{Binding Rule.VerifyDisplayNameContains, UpdateSourceTrigger=PropertyChanged}"/>
+  </Grid>
+  <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right"><Button Content="CANCEL" Width="110" Click="Cancel_Click"/><Button Content="SAVE RULE" Width="130" Click="Save_Click"/></StackPanel>
+ </Grid>
+</Window>
