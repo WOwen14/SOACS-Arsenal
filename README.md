@@ -1,5 +1,9 @@
 # SOACS Arsenal
 
+<p align="center">
+  <img src="Assets/GitHub-Logo.jpg" alt="SOACS Arsenal" width="400">
+</p>
+
 **Offline software and patch orchestration for disconnected Windows environments.**
 
 SOACS Arsenal is a mission-focused Windows patch and software deployment application designed for environments where normal enterprise update infrastructure may be unavailable or intentionally disconnected. It scans an offline repository, identifies supported package types, validates package integrity, builds an ordered install plan, and can produce a self-contained deployment ZIP for transfer to target systems.
